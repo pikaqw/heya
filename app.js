@@ -10,4 +10,11 @@ button2.addEventListener('mouseover', function() {
   this.style.top = top + '%';
 });
 
+window.addEventListener('load', function() {
+  const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
+  if (isMobile) {
+    const tryElement = document.getElementById('try');
+    tryElement.style.display = 'none';
+  }
+});
