@@ -17,5 +17,8 @@ window.addEventListener('load', function() {
   if (isMobile) {
     const errorMessage = document.getElementById('error-message');
     errorMessage.style.display = 'block';
+
+    const errorMessages = document.getElementById('try');
+    errorMessages.style.display = 'none';
   }
 });
