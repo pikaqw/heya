@@ -11,14 +11,3 @@ button2.addEventListener('mouseover', function() {
 });
 
 
-window.addEventListener('load', function() {
-  const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-
-  if (isMobile) {
-    const errorMessage = document.getElementById('error-message');
-    errorMessage.style.display = 'block';
-
-    const errorMessages = document.getElementById('try');
-    errorMessages.style.display = 'none';
-  }
-});
